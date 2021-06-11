@@ -166,6 +166,7 @@ public class ServerPreferencesFragment extends BaseGeneralPreferencesFragment im
             editText.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_arrow_drop_down, 0);
             editText.setFilters(new InputFilter[]{new ControlCharacterFilter(), new WhitespaceFilter()});
             editText.setOnTouchListener(this);
+            editText.selectAll();
         });
 
         usernamePreference.setOnPreferenceChangeListener(createChangeListener());
